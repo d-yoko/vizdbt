@@ -26,7 +26,7 @@
 - dbt artifacts（manifest.json + catalog.json）からカラムレベルの依存関係を解析する
 - **デフォルト**: @polyglot-sql/sdk（Rust→Wasm）でcompiled_codeをパースし、各カラムのソースを特定
 - **高精度モード（オプション）**: dbt Fusion LSP経由で`get_column_lineage`を実行（Fusionバイナリ検出時に自動使用）
-- 対応SQLダイアレクト: BigQuery, Snowflake, PostgreSQL, Redshift, DuckDB
+- 対応SQLダイアレクト: BigQuery, DuckDB
 
 #### F-002: カラムリネージュ可視化
 - モデルをノード、カラム間の依存をエッジとしてグラフ表示
