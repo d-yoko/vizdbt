@@ -42,7 +42,8 @@
 
 #### F-004: モデルDAG表示
 - manifest.jsonのparent_map/child_mapからモデル間のDAGを構築・表示
-- ノードタイプ（model, source, seed, snapshot, exposure）を色分け表示
+- ノードタイプ（model, source, seed, snapshot）を色分け表示
+  - ※ exposure は Phase 3 以降の拡張対象
 - materialization（table, view, incremental, ephemeral）を表示
 
 ### 2.3 モデル情報パネル

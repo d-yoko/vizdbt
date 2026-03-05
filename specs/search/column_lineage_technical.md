@@ -241,7 +241,7 @@ dbt-core v1.11（2025年リリース）の主な変更点:
 
 LineageQueryServiceのImplementation B（artifacts解析）では以下を考慮:
 - **manifest v7〜v12をサポート**（dbt 1.3〜1.11）
-- `compiled_code` フィールドを優先的に参照し、存在しなければ `compiled_sql`（v7未満）にフォールバック
+- `compiled_code` フィールドを参照（v7未満はサポート対象外）
 - `catalog.json`は任意（存在すればスキーマ情報としてsqlglotに渡し精度向上）
 - manifest v12のUDFリソースタイプは初期バージョンではスキップ可
 

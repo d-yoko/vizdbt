@@ -59,8 +59,8 @@ dbt-coreのバージョンによってmanifest.jsonのスキーマが異なる�
 
 ## 実装方針
 
-- `compiled_code` フィールドを優先的に参照
-- 存在しなければ `compiled_sql`（v7未満）にフォールバック
+- `compiled_code` フィールドを参照（v7〜v12で統一されたフィールド名）
+- v7未満はサポート対象外（エラー終了）
 - `catalog.json` は任意（存在すればスキーマ情報として精度向上に利用）
 - manifest v12のUDFリソースタイプは初期バージョンではスキップ
 - Fusion v20スキーマは FusionAdapter 側で対応（ArtifactsAdapterのスコープ外）
