@@ -182,12 +182,13 @@ interface LineageQueryService {
 - manifest.json読み込み + モデルDAG表示
 - ブラウザUI（React Flow + ELK.js）
 - `vizdbt` コマンドでサーバー起動 + ブラウザオープン
-- 単一バイナリ配布
 
-### Phase 2: カラムリネージュ
+### Phase 2: カラムリネージュ + 本番ビルド
 - catalog.json読み込み
 - ArtifactsAdapter実装（@polyglot-sql/sdk）
 - カラムリネージュの可視化UI
+- 本番用静的ファイル配信（Bun.embeddedFiles）
+- 単一バイナリ配布（`bun build --compile`）
 
 ### Phase 3: 強化 + Fusion統合
 - フィルタリング・検索機能
