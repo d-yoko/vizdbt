@@ -1,0 +1,20 @@
+{
+  "name": "vizdbt",
+  "version": "0.1.0",
+  "type": "module",
+  "bin": {
+    "vizdbt": "./src/index.ts"
+  },
+  "scripts": {
+    "dev": "bun run --watch src/index.ts",
+    "build": "bun run build.ts",
+    "typecheck": "bunx tsc --noEmit"
+  },
+  "dependencies": {
+    "commander": "^13.1.0"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.2.0",
+    "typescript": "^5.7.0"
+  }
+}
