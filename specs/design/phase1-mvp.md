@@ -398,6 +398,8 @@ export default defineConfig({
 
 ### 6.2 本番ビルド
 
+> **Note**: 本番ビルド（静的ファイル埋め込み・単一バイナリ生成）は Phase 2 で実装する。Phase 1 では開発サーバー（Vite dev + Bun バックエンド）での動作を対象とする。
+
 ```bash
 # 1. フロントエンドビルド
 cd frontend && bun run build    # → frontend/dist/

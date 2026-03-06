@@ -104,8 +104,8 @@ bunx tsc --noEmit
 
 | Phase | 内容 | 状態 |
 |-------|------|------|
-| Phase 1 | MVP: モデル DAG 表示 + CLI + 単一バイナリ | 開発中 |
-| Phase 2 | カラムレベルリネージュ（@polyglot-sql/sdk） | 計画中 |
+| Phase 1 | MVP: モデル DAG 表示 + CLI | 完了 |
+| Phase 2 | カラムレベルリネージュ + 単一バイナリ配布 | 計画中 |
 | Phase 3 | フィルタリング・検索・モデル詳細パネル・Fusion LSP 統合 | 計画中 |
 | Phase 4 | パフォーマンス最適化（実測ベース） | 計画中 |
 
